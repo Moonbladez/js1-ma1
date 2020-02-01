@@ -34,45 +34,48 @@ const cats = [
 ];
 
 const catArray7 = arr => {
-	for (let i = 0; i < arr.length; i++) {
-		console.log(arr[i].name);
-	}
+	arr.forEach(cat => {
+		console.log(cat.name);
+	});
 };
 
 catArray7(cats);
 
-//Question 8
+// Question 8
 const catArray8 = arr => {
-	for (let i = 0; i < arr.length; i++) {
-		const catName = `<h5>${arr[i].name}</h5>`;
+	arr.forEach(cat => {
+		const catName = `<h5>${cat.name}</h5>`;
 		console.log(catName);
-	}
+	});
 };
+
 catArray8(cats);
 
-//Question 9
+// Question 9
 const catArray9 = arr => {
-	for (let i = 0; i < arr.length; i++) {
-		resultsContainer.innerHTML += `<h5>${arr[i].name}</h5>`;
-	}
+	arr.forEach(cat => {
+		resultsContainer.innerHTML += `<h5>${cat.name}</h5>`;
+	});
 };
 
 catArray9(cats);
 
-//Question 10
+// Question 10
+
 const catArray10 = arr => {
-	for (let i = 0; i < arr.length; i++) {
+	arr.forEach(cat => {
 		let catAge = "Age Unknown";
-		if (arr[i].age) {
-			catAge = arr[i].age;
+		if (cat.age) {
+			catAge = cat.age;
 		}
 
 		const details = `<div>
-		<h5>${arr[i].name}</h5>
+			<h5>${cat.name}</h5>
 			<p>${catAge}</p>
-		</div>`;
+			</div>`;
+
 		resultsContainer.innerHTML += details;
-	}
+	});
 };
 
 catArray10(cats);
