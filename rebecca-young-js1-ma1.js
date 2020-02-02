@@ -1,7 +1,7 @@
 //question 1
 const cat = {
 	complain() {
-		console.log("meow");
+		console.log("Meow!");
 	},
 };
 
