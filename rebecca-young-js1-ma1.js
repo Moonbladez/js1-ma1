@@ -1,4 +1,11 @@
 //question 1
+const cat = {
+	complain() {
+		console.log("meow");
+	},
+};
+
+cat.complain();
 
 //Question 2
 const heading = document.querySelector("h3");
