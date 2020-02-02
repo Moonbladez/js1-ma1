@@ -1,8 +1,6 @@
 //question 1
 const cat = {
-	complain() {
-		console.log("Meow!");
-	},
+	complain: () => console.log("Meow!"),
 };
 
 cat.complain();
